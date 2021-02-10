@@ -1,8 +1,8 @@
-
+import PropTypes from 'prop-types';
 // import { Fragment } from 'react';
 
 // Functional Component FC
-const PrimeraApp = ( { saludo = 'Hola Mundo' } ) => { // o (props) =>
+const PrimeraApp = ( { saludo } ) => { // o (props) =>
     
     // const saludo = 'Hola Mundo';
 
@@ -24,6 +24,12 @@ const PrimeraApp = ( { saludo = 'Hola Mundo' } ) => { // o (props) =>
         
     // Con la etiqueta pre el objeto se imprime como en el código, con llaves y las lìneas las determina el 3 que está como parámetro
 };
+
+// Defino el tipo de las propiedades del componente
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired,
+    otra: PropTypes.number.isRequired
+}
 
 export default PrimeraApp;
 

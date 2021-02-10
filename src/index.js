@@ -8,4 +8,6 @@ const divRoot = document.querySelector('#root');
 
 console.log(divRoot);
 
-ReactDOM.render( <PrimeraApp saludo="Hola, Soy Goku"/>, divRoot);
+ReactDOM.render( <PrimeraApp saludo="Hola, Soy Goku" otra={123}/>, divRoot);
+
+// Para enviar números saludo={123}
