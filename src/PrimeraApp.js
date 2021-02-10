@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 // import { Fragment } from 'react';
 
 // Functional Component FC
-const PrimeraApp = ( { saludo } ) => { // o (props) =>
+const PrimeraApp = ( { saludo, subtitulo } ) => { // o (props) =>
     
     // const saludo = 'Hola Mundo';
 
@@ -17,6 +17,7 @@ const PrimeraApp = ( { saludo } ) => { // o (props) =>
     return ( 
         <> 
             <h1>{ saludo }</h1>
+            <p>{ subtitulo }</p>
             {/* <pre>{ JSON.stringify(saludoObjeto, null, 3) }</pre>  */}
             <p>Mi primera aplicación</p>
         </>
@@ -29,6 +30,10 @@ const PrimeraApp = ( { saludo } ) => { // o (props) =>
 PrimeraApp.propTypes = {
     saludo: PropTypes.string.isRequired,
     otra: PropTypes.number.isRequired
+}
+
+PrimeraApp.defaultProps = {
+    subtitulo: 'Soy un subtitulo'
 }
 
 export default PrimeraApp;
