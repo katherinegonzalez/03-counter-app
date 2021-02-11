@@ -6,10 +6,10 @@ const PrimeraApp = ( { saludo, subtitulo } ) => { // o (props) =>
     
     // const saludo = 'Hola Mundo';
 
-    const saludoObjeto = {
+    /*const saludoObjeto = {
         nombre: 'Katherine',
         edad: 27
-    };
+    };*/
 
     // Siempre deben estar contenidos en un solo elemento para hacer el return, 
     // puede ser un div o un Fragment, el fragment no pone ningún elemento
