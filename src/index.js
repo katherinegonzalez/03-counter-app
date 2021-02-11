@@ -9,7 +9,7 @@ const divRoot = document.querySelector('#root');
 
 console.log(divRoot);
 
-ReactDOM.render( <CounterApp value= {123} />, divRoot );
+ReactDOM.render( <CounterApp value= {10} />, divRoot );
 
 // ReactDOM.render( <PrimeraApp saludo="Hola, Soy Goku" otra={123}/>, divRoot);
 
