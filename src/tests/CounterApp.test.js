@@ -3,7 +3,11 @@ import CounterApp from "../CounterApp"
 
 describe('Pruebas en <CounterApp />', () => {
 
-    const wrapper = shallow( <CounterApp />);
+    let wrapper = shallow( <CounterApp />);
+
+    beforeEach(()=>{
+        wrapper = shallow( <CounterApp />);
+    });
 
     test('Debe mostrar <CounterApp /> correctamente', () => {
         
@@ -29,11 +33,11 @@ describe('Pruebas en <CounterApp />', () => {
     });
     
     test('Debe decrementar con el botón -1', () => {
-        const counterTextInitial = wrapper.find('h2').text().trim();
+        
         wrapper.find('button').at(2).simulate('click');
         const counterText = wrapper.find('h2').text().trim();
 
-        expect(counterText).toBe(`${counterTextInitial - 1}`);
+        expect(counterText).toBe('9');
     })
     
 })
