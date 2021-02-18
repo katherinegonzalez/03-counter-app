@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const CounterApp = ({ value = 10 }) => {
 
     // useState retorna un arreglo con 2 valores
-    const [ counter, setCounter ] = useState(0); // revisar esto en el archivo de desestructuración
+    const [ counter, setCounter ] = useState(value); // revisar esto en el archivo de desestructuración
     
 
     // handleAdd

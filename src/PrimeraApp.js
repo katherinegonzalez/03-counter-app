@@ -17,7 +17,7 @@ const PrimeraApp = ( { saludo, subtitulo } ) => { // o (props) =>
     return ( 
         <> 
             <h1>{ saludo }</h1>
-            <p>{ subtitulo }</p>
+            <p id="subtitulo">{ subtitulo }</p>
             {/* <pre>{ JSON.stringify(saludoObjeto, null, 3) }</pre>  */}
             <p>Mi primera aplicación</p>
         </>
